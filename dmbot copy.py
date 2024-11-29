@@ -59,7 +59,7 @@ def embed_maker(message):
     embed.set_footer(
         text=(
             f"Owls Investment Group LLC. Informational purposes only. Not financial advice.\n"
-            f"Bot Version {version} -- Released {release_date}\nBot by BOOMBORG\n{timeAZ()}"
+            f"Bot Version {version} -- Released {release_date}\nBot by Roman\n{timeAZ()}"
         )
     )
     if message.attachments:
