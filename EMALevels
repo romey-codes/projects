@@ -1,0 +1,17 @@
+//@version=6
+indicator('BOOMBORG EMA Levels', overlay = true)
+
+emaLength1 = 8
+emaLength2 = 21
+emaLength3 = 50
+emaLength4 = 200
+
+ema1 = ta.ema(close, emaLength1)
+ema2 = ta.ema(close, emaLength2)
+ema3 = ta.ema(close, emaLength3)
+ema4 = ta.ema(close, emaLength4)
+
+plot(ema1, title = 'BOOMBORG EMA 8', color = color.blue, linewidth = 1)
+plot(ema2, title = 'BOOMBORG EMA 21', color = color.orange, linewidth = 1)
+plot(ema3, title = 'BOOMBORG EMA 50', color = color.rgb(255, 82, 82), linewidth = 1)
+plot(ema4, title = 'BOOMBORG EMA 200', color = color.red, linewidth = 1)
