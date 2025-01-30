@@ -171,11 +171,6 @@ async def stc(ctx, *, message: str):
 
 @bot.command()
 async def add(ctx, channel: discord.TextChannel, role: discord.Role = None):
-    """
-    Adds a server channel and role to the alert_channels.json file.
-    Usage: `=add #channel-name [@role-mention]`
-    If no role is provided, it defaults to `@everyone`.
-    """
     if ctx.author.id not in OWNER_IDS:
         await ctx.send("You do not have permission to use this command.")
         return
